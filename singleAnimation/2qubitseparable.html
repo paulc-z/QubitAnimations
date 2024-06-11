@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Torus 2 Qubit Visualization </title>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3-simple-slider@1.10.4/dist/d3-simple-slider.min.js"></script>
+    <script type= "module" src="../lib/sepTorus.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    <script type="module"> 
+        // enable LaTex support by using KaTex
+        import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.mjs";
+        renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );   
+    </script>    
+</head>
+
+
+<body>
+        <div class="w3-container" style = "display: flex; flex-wrap: wrap; flex-direction: row ;">
+            
+            <div id = "div_sepTorus" class="w3-container"  style="position: relative; margin-top: 74px; " >    
+                <h4  class="overlayTopMid"      id = "torus_state"><h4>    
+                <div class="overlayTopLeft"     id = "div_sepQubit1">      <h5>1st Qubit Bloch Circle</h5>   </div>          
+                <div class="overlayTopRight"    id = "div_sepQubit2">      <h5>2nd Qubit Bloch Circle</h5>   </div>
+            </div>
+    
+            <div  style=" margin-top: 74px;order: 2;  " class="w3-container">
+                <div id="sepAngle1-slider" class="col-sm" style="position: relative "><h4 class = sliderTitle > Angle of the 1st qubit, $\theta_1$</h4></div> 
+                
+                <div id="sepAngle2-slider" class="col-sm" style="position: relative; margin-top: 40px"><h4 class = sliderTitle > Angle of the 2nd qubit, $\theta_2$</h4></div>
+            </div>
+
+        </div>
+        
+
+
+</body>
+</html>
