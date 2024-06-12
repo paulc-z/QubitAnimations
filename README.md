@@ -4,8 +4,7 @@ Animations are designed to assist with learning basic concepts of quantum mechan
 Background information on these qubit maps, including images and examples of how they can be used, are found at https://arxiv.org/abs/2212.03448 ; this paper preprint, Qubit_Animations.pdf, is also in this repository.  Formulas used to create the maps are found in the appendices of this paper. 
 
 # Installation
-html files for each animation are contained in the `singleAnimation/` directory.  Other directories contain supporting javascript files. Run a live server on the root directory `/` to see the animations locally. This is important for the javascript imports to work.
-
+Run a live server on the root directory `/` of this repo to serve the animations locally. This is important for the javascript imports to work. Open `html` files for each animation in the `singleAnimation/` directory.  Other directories contain supporting javascript files.
 
 # MISC 
 
